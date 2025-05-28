@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0, user-scalable=no">
+    <title>Website CV - 5231011045</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    }
+
+
+.kotak {
+    position: absolute;
+    top: 40px;
+    left: 170px;
+    width: 300px; 
+    height: 100px; 
+
+    background-color: white; 
+    border-radius: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;          
+}
+
+.kotak p:first-child{
+    font-size: 20px;
+    color: #17242a;
+}
+.kotak p:nth-child(2){
+    font-size: 16px;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 9px;
+
+    background-color: #17242a;
+    padding: 4px 8px; 
+    border-radius: 6px;
+    width: fit-content;
+}
+.kotak p{
+    font-size: 12px;
+    color: #17242a;
+    margin-bottom: 4px;
+}
+.kotak img{
+    width: 10px; 
+    height: 10px; 
+    margin-right: 4px;
+}
+
+
+/*Profile picture*/
+.foto{
+    position: absolute;
+    top: 40px; left: 40px;
+    width: 110px; height: 110px; 
+}
+.foto img{
+    width: 110px; height: 110px; 
+    border-radius: 10px;
+}
+
+
+/*Profile*/
+.profile{
+    position: absolute;
+    top: 180px; left: 40px; 
+    width: 100px; height: 40px; 
+
+    display: flex;
+    align-items: center; 
+    justify-content: left; 
+}
+.profile p{
+    font-weight: bold;
+    font-size: 22px;
+    color: #17242a;
+}
+
+
+.line {
+    border-left: 6px solid #17242a; 
+    height: 20px;   
+    margin-right: 10px;
+}
+.li{
+    font-weight: bold;
+    font-size: 22px;
+    color: #17242a;
+}
+ul {
+    list-style-type: square;
+    padding-left: 30px; 
+}
+
+
+.profile_isi{
+    /*Box*/
+    position: absolute;
+    top: 210px; left: 40px; 
+    width: 830px; height: auto; 
+    background-color: #ffffff;
+
+    /*Text Thingy*/
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 6px;
+    margin-left: 16px;
+}
+
+
+/*Education*/
+.education{
+    position: absolute;
+    top: 350px; left: 40px; 
+    width: 100px; height: auto; 
+
+    display: flex;
+    align-items: center; 
+    justify-content: left; 
+    margin-top: 24px;
+}
+
+.education p{
+    font-weight: bold;
+    font-size: 22px;
+    color: #17242a;
+}
+
+.education_isi{
+    position: absolute;
+    top: 380px; left: 40px; 
+    width: 830px; height: auto; 
+    background-color: #ffffff;
+    line-height: 2;
+    margin-top: 24px;
+}
+
+
+/*Expertice*/
+.work{
+    position: absolute;
+    top: 540px; left: 40px; 
+    width: auto; height: auto; 
+
+    display: flex;
+    align-items: center; 
+    justify-content: left; 
+    margin-top: 24px;
+}
+.work p{
+    font-weight: bold;
+    font-size: 22px;
+    color: #17242a;
+}
+.work_isi{
+    position: absolute;
+    top: 570px; left: 40px; 
+    width: 830px; height: auto; 
+    background-color: #ffffff;
+    line-height: 2;
+    margin-top: 24px;
+}
+
+
+/*Right box thing*/
+.right_box {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 300px; 
+    height: 100vh; 
+    background-color: #ffffff; 
+    box-shadow: 0 2px 2px #a9dbdc; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.right_box p {
+    font-weight: bold;
+    font-size: 14px;
+    color: #17242a;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%; 
+    justify-content: flex-start; 
+    margin-top: 10px;
+}
+
+.right_box p:nth-child(1) {
+    font-size: 16px;
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 20px;
+    background-color: #17242a;
+    padding: 2px 8px; 
+    border-radius: 6px;
+    width: fit-content;
+    text-align: center; 
+}
+
+.right_box img{
+    width: 20px; 
+    height: 20px; 
+    margin-right: 6px;
+    margin-left: 10%;
+}
+
+
+/*Right box thing*/
+.right_box p:nth-child(5) {
+    font-size: 16px;
+    color: white;
+    margin-top: 21%;
+    margin-bottom: 20px;
+    background-color: #17242a;
+    padding: 2px 8px; 
+    border-radius: 6px;
+    width: auto;
+    text-align: center; 
+}
+
+.right_box p:nth-child(6) {
+    font-size: 16px;
+    color: white;
+    margin-top: 30%;
+    margin-bottom: 20px;
+    background-color: #17242a;
+    padding: 2px 8px; 
+    border-radius: 6px;
+    width: auto;
+    text-align: center; 
+}
+
+.opsis {
+    position: fixed;
+    top: 470px;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+}
+.opsis img {
+    height: 40px;
+    width: auto;
+} .opsis img:nth-child(2) {
+    margin-left: 10px; margin-right: 10px;
+}
+
+.language {
+    position: fixed;
+    top: 320px;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+}
+.language img {
+    height: 40px;
+    width: auto;
+} .language img:nth-child(2){
+    margin-left: 10px; margin-right: 10px;
+}
+</style>
+
+
+</head>
+<body>
+    <!-- Name, Date, Location -->
+    <div class="kotak">
+        <p>Muhammad Nathan Jayani</p>
+        <p>Mahasiswa Teknik Komputer</p>
+        <p><img src="https://i.imgur.com/z66ZFI9.png">Jawa Tengah, Purworejo</p>
+        <p><img src="https://i.imgur.com/KsDQtiR.png">February 21, 2005</p>
+    </div>
+
+    <!-- Foto Propil -->
+    <div class="foto">
+        <img src="https://i.imgur.com/Kx6emUy.jpeg">
+    </div>
+
+     <!-- Isi Propil -->
+    <div class="profile">
+        <div class="line"></div>
+        <p>Profile</p>
+    </div>
+
+    <div class="profile_isi">
+        <p>Saya adalah mahasiswa Teknik Komputer dengan pengalaman dalam pemrograman, troubleshooting computer, dan CyberSecurity.
+            Memahami berbagai bahasa pemrograman dan sangat tertarik dengan game development. 
+            Saya tertarik dengan Sistem operasi Linux dan selalu berusaha untuk belajar lebih banyak. 
+            Saya juga pernah bekerja di toko reparasi, yang membantu saya membangun keterampilan dalam reparasi Hardware dan Sofrware komputer. 
+            Saya berharap bisa menerapkan apa yang saya pelajari untuk menciptakan suatu aplikasi yang diminati banyak orang.</p>
+    </div>
+
+    <!-- Education, Isi, Line -->
+    <div class="education">
+        <div class="line"></div>
+        <p>Education</p>
+    </div>
+    <ul class="education_isi">
+        <li>SDN 1 Bugel <span style="color: #3aafa9;">Dari tahun 2011 - 2017</span></li>
+        <li>SMP Global Mandiri Patrol <span style="color: #3aafa9;">Dari tahun 2017 - 2020</span></li>
+        <li>SMKN 1 Patrol - Teknik Komputer Jaringan <span style="color: #3aafa9;">Dari tahun 2020 - 2023</span></li>
+        <li>Universitas Teknologi Yogyakarta - Teknik Komputer <span style="color: #3aafa9;">Dari tahun 2023 - Sekarang</li>
+      </ul>
+
+    <!-- Work Exp -->
+    <div class="work">  
+        <div class="line"></div>
+        <p>Skills</p>
+    </div>
+
+    <ul class="work_isi">
+        <li>Fasih dalam berbahasa Inggris, baik dalam berbicara maupun pemahaman membaca</li>
+        <li>Berpengalaman belajar di kampung inggris dan memiliki sertifikasinya</li>
+        <li>Memiliki keterampilan dalam memperbaiki hardware dan software komputer</li>
+        <li>Memiliki pengalaman dalam CyberSecurity, baik ethical hacking dan defense</li>
+        <li>Pengalaman menggunanakan banyak Sistem Operasi (Seperti Kali Linux, Ubuntu, Debian)</li>
+        <li>Menguasai bahasa pemrograman HTML, C++, dan Java</li>
+    </div>
+
+    <!-- Right side box thing -->
+    <div class="right_box">
+        <p>Contact Me</p>
+        <p><img src="https://i.imgur.com/ofC4Lxe.png">083817966168</p>
+        <p><img src="https://i.imgur.com/kLLlc1S.png">yunominath4me@gmail.com</p>
+        <p><img src="https://i.imgur.com/XbCSnXf.png">h4neric4</p>
+
+        <p>Language</p>
+        <p>Operating System</p>
+
+    </div>
+    <!-- Coding bahasa -->
+    <div class="language">
+        <img src="https://i.imgur.com/E3frFxw.png">
+        <img src="https://i.imgur.com/MKjwNkz.png">
+        <img src="https://i.imgur.com/1t5biOX.png">
+    </div>
+
+    <!-- OS Linux -->
+    <div class="opsis">
+        <img src="https://i.imgur.com/IG1Rzb7.png">
+        <img src="https://i.imgur.com/qH1xKga.png">
+        <img src="https://i.imgur.com/uAMv7Bb.png">
+    </div>
+    
+    
+
+    
+</body>
+</html>
